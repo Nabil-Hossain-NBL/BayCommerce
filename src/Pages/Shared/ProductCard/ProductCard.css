@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-*
-{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 
-body
-{
+body {
     font-family: 'Roboto', sans-serif;
 }
-a
-{
+
+a {
     text-decoration: none;
 }
+
 .product-card {
     width: 380px;
     position: relative;
@@ -100,19 +100,25 @@ a
     text-align: right;
 }
 
-.product-links li {
+.product-links .non-favorite {
     display: inline-block;
     margin-left: 5px;
     color: #e1e1e1;
     transition: 0.3s;
     font-size: 17px;
 }
+.product-links .favorite {
+    display: inline-block;
+    margin-left: 5px;
+    color: #fbb72c;
+    font-size: 17px;
+}
 
-.product-links li:hover {
+.product-links .non-favorite:hover {
     color: #fbb72c;
 }
 
-.button-div{
+.button-div {
     display: flex;
     justify-content: center;
 }
@@ -129,13 +135,13 @@ a
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
-  }
+}
 
-  .view-button:hover {
+.view-button:hover {
     background-color: #fbb72c;
-  }
+}
 
-  .modal {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -146,9 +152,9 @@ a
     justify-content: center;
     align-items: center;
     z-index: 1000;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -157,36 +163,29 @@ a
     width: 90%;
     text-align: center;
     position: relative;
-  }
-  
-  .modal button {
+}
+
+.modal button {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 42%;
     background: none;
     border: none;
     cursor: pointer;
     font-size: 18px;
-    background-color: #363636;
-    color: #ffffff;
+    color: black;
     padding: 4px;
     border-radius: 14px;
-  }
-  
-  .modal h2 {
+}
+
+.modal h2 {
     font-size: 24px;
     margin-top: 18px;
-  }
-  
-  .modal img {
+}
+
+.modal img {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-  }
-  .modal button {
-    background-color: #363636;
-    color: #ffffff;
-    padding: 4px;
-    border-radius: 14px;
+}
 
-  }

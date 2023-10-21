@@ -1,0 +1,16 @@
+.hero {
+    background-image: url('https://images.pexels.com/photos/6995134/pexels-photo-6995134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    height: 100vh;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}

@@ -1,11 +1,15 @@
+import'./Home.css'
 
-import Banner from "../Banner/Banner";
 
 const Home = () => {
     return (
         <>
-        <h1>Home</h1>
-        <Banner></Banner>
+            <section className="hero">
+                <h1>Welcome to My E-Commerce Store</h1>
+                <p>Discover a wide range of products at great prices.</p>
+                <a href="/products" className="btn">Shop Now</a>
+            </section>
+
         </>
     );
 };

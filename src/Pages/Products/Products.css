@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -6,3 +6,35 @@
     margin-top: 30px;
     padding: 10px 20px;
 }
+
+.category-dropdown{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* 
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+} */
