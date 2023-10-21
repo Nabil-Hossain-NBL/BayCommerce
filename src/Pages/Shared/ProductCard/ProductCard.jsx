@@ -1,8 +1,23 @@
-import './ProductCard.css'
-const ProductCard = ({item}) => {
-    console.log(item);
+import { useState } from 'react';
+import './ProductCard.css';
+import { FaHeart } from 'react-icons/fa';
+
+const ProductCard = ({ item }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <>
+
+
+
             <div className="product-card">
                 <div className="product-image">
                     <img src={item.image} alt="" />
@@ -14,11 +29,26 @@ const ProductCard = ({item}) => {
                     <div className="product-bottom-details">
                         <div className="product-price">$230.99</div>
                         <div className="product-links">
-                            <a href=""><i className="fa fa-heart"></i></a>
+                            <li><FaHeart></FaHeart></li>
                         </div>
                     </div>
+                    <div className='button-div'>
+                        <button onClick={openModal} className="view-button">view</button>
+                    </div >
+                </div >
+            </div >
+            {isModalOpen && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <h2>{item.title}</h2>
+                        <div className="product-image">
+                            <img src={item.image} alt="" />
+                        </div>
+                        <div className="product-price">$230.99</div>
+                        <button className='modal-button' onClick={closeModal}>Close</button>
+                    </div>
                 </div>
-            </div>
+            )}
         </>
     );
 };
